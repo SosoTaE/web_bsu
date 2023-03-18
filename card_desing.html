@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            /* background: radial-gradient(rgb(58, 4, 58),rgb(0, 0, 32)); */
+            /* background: radial-gradient(rgb(27, 27, 142),rgb(36, 36, 103)); */
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            margin: 50px;
+        }
+
+        .head {
+            background-color: #17470F;
+            background: linear-gradient(0deg, #17470F, #17470F), radial-gradient(64.01% 80.49% at 50% 19.51%, #275F77 0%, #269DDF 100%);
+background-blend-mode: color, normal;
+            width: 300px;
+            height: 350px;
+            border-radius: 20px 20px 0px 0px;
+            
+        }
+
+        .head img {
+            object-fit: cover;
+            width: 300px;
+            height: 300px;
+            user-select: none;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+
+        .body {
+            width: 300px;
+            height: 200px;
+            background-color: white;
+            border-radius: 0px 0px 10px 10px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+        
+        .texts {
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            height: 100px;
+            justify-content: space-around
+        }
+
+        .buyButton {
+            width: 280px;
+            height: 50px;
+            background-color: #3483FA;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 5px 5px 5px 5px;
+            user-select: none;
+            cursor: pointer;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            transition: ease-in-out;
+        }
+
+        .buyButton:hover {
+            background: linear-gradient(rgb(32, 32, 85),rgb(32, 32, 85));
+            transition: ease-in-out;
+        }
+
+        .texts div {
+            font-family: 'Roboto', sans-serif;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="head"></div>
+        <div class="body">
+            <div class="texts">
+                <div style="font-size:20px; font-weight: bold; color: rgba(0, 0, 0, 1);">$1.290<sup>00</sup></div>
+                <div style="color:rgba(65, 65, 65, 1)">ATH_M50x</div>
+                <div style="font-size: 15px; font-weight: lighter; color: 
+                rgba(0, 0, 0, 0.61);">1634 Cimmaron road Irvine, CA 92614</div>
+            </div>
+            <div style="width: inherit; display: flex; align-items: center; justify-content: center;">
+                <div class="buyButton">Buy</div>
+            </div>
+        </div>
+    </div>  
+</body>
+</html>
