@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(24,30,43,255);
+            height: 100vh;
+            user-select: none;
+        }
+        
+        .container {
+            background-image: url("https://reinforceconf.com/images/shared/hero/reinforce/landing_page.jpg");
+            object-fit: cover;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 1000px;
+            height: 600px;
+            /* background-color: #04141c; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            filter: saturate(10%) hue-rotate(10000deg);
+            border-radius: 2px;
+        }
+
+        .logo img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;   
+            filter: brightness(150%);
+            user-select: none;
+        }
+
+        .texts p {
+            color: white;
+            font-family: 'IBM Plex Sans', sans-serif;
+            display: flex;
+            justify-content: center;
+            animation: move infinite;
+            position: relative;
+
+        }
+
+
+        .text_container {
+            width: 600px;
+            height: 160px;
+            background-color: rgb(50, 5, 85, 0.4);
+            margin-top: 50px;
+        }
+
+        .text_container p {
+            color: white;
+            font-size: 17px;
+            word-break: break-word;
+            padding: 10px;
+            font-family: 'IBM Plex Sans', sans-serif;
+            word-spacing: 5px;
+            text-align:justify;
+
+        }
+
+        .text_container p span {
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="color:white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; letter-spacing: 1 px;">REINFORCE</h1>
+        <h2 style="color:white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; letter-spacing: 1 px; margin: 0;">AI CONFERENCE</h2>
+        <div class="logo">
+            <img src="https://cdn-icons-png.flaticon.com/512/2235/2235047.png" title="REINFORCE">
+        </div>
+        <div class='texts'>
+            <marquee direction="right">
+                <p id="text">International AI and ML Hybrid Conference as part of the Compass Tech Summit</p>
+            </marquee>
+            <p id="text" >MORE THAN A CONFERENCE...</p>
+        </div>
+
+        <div class="text_container">
+            <p>
+                Reinforce&nbsp;conference&nbsp;this&nbsp;year&nbsp;will&nbsp;be&nbsp;not&nbsp;only&nbsp;organized&nbsp;as&nbsp;an&nbsp;individual&nbsp;conference&nbsp;but&nbsp;as&nbsp;part&nbsp;of&nbsp;something&nbsp;new.&nbsp;Compass&nbsp;Tech&nbsp;Summit&nbsp;will&nbsp;bring&nbsp;together&nbsp;under&nbsp;one&nbsp;roof&nbsp;several&nbsp;tech&nbsp;conferences,&nbsp;such&nbsp;as&nbsp;<span>Amuse</span>,&nbsp;<span>Crunch</span>,&nbsp;<span>Impact</span>&nbsp;and&nbsp;<span>Stretch</span>,&nbsp;with&nbsp;topics&nbsp;like&nbsp;UX/UI,&nbsp;data,&nbsp;product&nbsp;management&nbsp;and&nbsp;engineering&nbsp;leadership.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
